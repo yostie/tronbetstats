@@ -1,0 +1,25 @@
+---
+
+globals:
+  ante_cost: 1660                               # CURRENT COST TO MINE ANTE IN TRX
+  num_simulations: 10                           # SIMULATIONS TO RUN PER STRATEGY
+
+strategies:
+  - name: Strategy 1
+    bankroll: 500                               # STARTING BANKROLL
+    profit_pct: 10                              # PERCENT OF STARTING BANKROLL WHERE YOU TAKE PROFITS
+    win_pct: 82                                 # YOUR CHANCE OF WINNING -> DETERMINES THE PAYOUT MULTIPLIER
+    max_consecutive_losses: 2                   # MAX CONSECUTIVE LOSSES BEFORE RETURNING TO THE DEFAULT BET
+    loss_multiplier: 3                          # AMOUNT TO MULTIPLY YOUR DEFAULT BET BY UPON A LOSS - ONLY MULTIPLIES ONCE
+    default_bet: 10                             # YOUR DEFAULT BET
+    max_bets: 200                               # MAXIMUM NUMBER OF BETS, 0 FOR UNLIMITED (0 IS NOT RECOMMENDED - THE SIM MAY HANG WITHOUT A MAX BET)
+
+  - name: Strategy 2
+    bankroll: 1000
+    profit_pct: 10
+    win_pct: 50
+    max_consecutive_losses: 2
+    loss_multiplier: 3
+    default_bet: 10
+    max_bets: 750
+
