@@ -32,5 +32,3 @@ Specifies the values for the betting and payout.  All of these values are pre-de
 prediction: Your predicted number.  The simulator currently assumes if the lucky number is above this number, you win.
 win_pct: Your chance of winning.
 multiplier: The value your bet will be multiplied by to determine your winnings.
-
-  
